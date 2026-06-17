@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title id="title-el"
+  data-en="Logora · Life Logging App"
+  data-zh="Logora · 生活记录工具">Logora · Life Logging App</title>
+
+<meta name="description" id="meta-desc"
+  data-en="Logora helps you instantly log daily life events like water intake, workouts, coffee, and habits. Track everything in seconds with a simple tap, visualize trends, and stay aware of your daily patterns."
+  data-zh="Logora 帮助你快速记录喝水、运动、咖啡与习惯打卡等日常事件，一键记录，轻松追踪趋势变化，掌握生活节奏。"
+  content="Logora helps you instantly log daily life events like water intake, workouts, coffee, and habits. Track everything in seconds with a simple tap, visualize trends, and stay aware of your daily patterns.">
+
+<link rel="icon" href="logora_icon.png">
+
+<style>
+:root{
+  --bg:#07130D;
+  --surface:#102018;
+  --text:#F5FFF8;
+  --text2:#B8C9BE;
+  --accent:#FF5A3C;
+  --accent2:#FF2E63;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  background:#0b0f14;
+  color:var(--text);
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Helvetica,Arial,"PingFang SC","Microsoft Yahei",sans-serif
+}
+a{color:var(--accent);text-decoration:none}
+
+.container{max-width:1100px;margin:0 auto;padding:40px 24px}
+
+nav{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand img{width:40px;height:40px;border-radius:10px}
+
+.nav-links{display:flex;gap:18px}
+.nav-links a{color:var(--text2);font-weight:600}
+
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;margin-top:40px}
+.hero h1{font-size:46px;line-height:1.1;margin:0}
+.hero p{color:var(--text2);font-size:18px}
+
+.card{
+  background:rgba(255,255,255,0.04);
+  border-radius:18px;
+  padding:22px;
+  backdrop-filter: blur(10px);
+}
+
+.button{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:white;
+  font-weight:800;
+}
+
+.section{margin-top:80px}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+.tag{
+  display:inline-block;
+  padding:4px 10px;
+  background:rgba(255,255,255,0.08);
+  border-radius:999px;
+  font-size:12px;
+  color:var(--text2)
+}
+
+.footer{
+  margin-top:80px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding:30px 0;
+  color:var(--text2)
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- NAV -->
+<nav>
+  <div class="brand">
+    <img src="logora_icon.png">
+    <span>Logora</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#privacy" data-en="Privacy" data-zh="隐私"></a>
+    <a href="#support" data-en="Support" data-zh="支持"></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1 data-en="One tap, log your daily life."
+        data-zh="一键记录，每天大小事"></h1>
+
+    <p data-en="Log water, workouts, coffee, habits and more in seconds. Understand your behavior trends and stay consistent effortlessly."
+       data-zh="喝水、运动、咖啡、习惯打卡，一键记录，几秒完成，轻松掌握趋势变化。"></p>
+
+    <div style="margin-top:20px">
+      <a class="button"
+         data-en="Download on App Store"
+         data-zh="在 App Store 下载"></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 data-en="Quick Actions" data-zh="快速记录"></h3>
+    <div class="grid-3" style="margin-top:10px">
+      <div class="tag" data-en="Water +1" data-zh="喝水 +1"></div>
+      <div class="tag" data-en="Run +1" data-zh="运动 +1"></div>
+      <div class="tag" data-en="Coffee +1" data-zh="咖啡 +1"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <h2 data-en="Core Features" data-zh="核心功能"></h2>
+
+  <div class="grid-3" style="margin-top:20px">
+
+    <div class="card">
+      <div class="tag" data-en="One Tap Logging" data-zh="一键记录"></div>
+      <h3 data-en="Instant +1 tracking" data-zh="即时 +1 记录"></h3>
+      <p data-en="Log habits with a single tap." data-zh="轻点即可完成记录。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Timeline" data-zh="时间线"></div>
+      <h3 data-en="All history in one place" data-zh="统一记录历史"></h3>
+      <p data-en="Search and review your logs easily." data-zh="可搜索与筛选所有记录。"></p>
+    </div>
+
+    <div class="card">
+      <div class="tag" data-en="Insights" data-zh="洞察"></div>
+      <h3 data-en="Trend visualization" data-zh="趋势分析"></h3>
+      <p data-en="Understand your habits over time." data-zh="自动生成趋势变化分析。"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="section">
+  <div class="card">
+    <h2 id="privacy" data-en="Privacy" data-zh="隐私"></h2>
+    <ul>
+      <li data-en="All data stored locally by default."
+          data-zh="数据默认存储在本地设备。"></li>
+
+      <li data-en="No account required."
+          data-zh="无需注册账号。"></li>
+
+      <li data-en="No tracking or ads."
+          data-zh="无广告与追踪。"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section class="section">
+  <div class="card">
+    <h2 id="support" data-en="Support" data-zh="支持"></h2>
+    <p data-en="Contact us for help or feedback."
+       data-zh="如有问题或建议请联系我们。"></p>
+
+    <a href="mailto:support@logora.app">support@logora.app</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span>© 2026 Logora</span>
+</div>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll("[data-en]").forEach(el=>{
+    const v = el.getAttribute(lang==="zh"?"data-zh":"data-en");
+    if(v) el.textContent = v;
+  });
+}
+setLang(navigator.language.startsWith("zh")?"zh":"en");
+</script>
+
+</body>
+</html>
